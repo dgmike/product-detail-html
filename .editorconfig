@@ -3,15 +3,19 @@
 
 root = true
 
-[src/*]
+[{src/*,gulpfile.js,package.json,index.js}]
 end_of_line = lf
 insert_final_new_line = true
 charset = utf-8
+
+[{gulpfile.js,package.json,index.js}]
+indent_style = space
+indent_size = 2
 
 [src/**.html]
 indent_style = tab
 indent_size = 2
 
-[src/**.js]
+[src/{styl/**.styl,js/**.js}]
 indent_style = space
 indent_size = 2

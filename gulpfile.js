@@ -26,4 +26,6 @@ gulp.task('stylus:watch', ['stylus'], () => {
   return gulp.watch(data.stylus.watch, ['stylus']);
 });
 
+gulp.task('compile', ['stylus']);
+
 gulp.task('default', ['stylus:watch']);

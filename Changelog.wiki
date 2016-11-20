@@ -1,0 +1,12 @@
+== 0.1.0 (Nov/20 2016 16:00 -0200 by Michael Granados) ==
+
+Features:
+
+  - base structure to development ambiance
+  - .nvmrc informing node version used
+  - editorconfig informs how each file must follow structure
+  - license MIT
+  - nodejs server serving static files
+  - script to release version
+
+

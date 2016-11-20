@@ -4,6 +4,7 @@
   "description": "Product's details HTML page using mercadolibre official framework.",
   "main": "index.js",
   "scripts": {
+    "prepublish": "./node_modules/.bin/gulp compile",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },

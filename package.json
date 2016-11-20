@@ -28,5 +28,10 @@
   "homepage": "https://github.com/dgmike/product-detail-html#readme",
   "dependencies": {
     "httpdispatcher": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-stylus": "^2.6.0"
   }
 }

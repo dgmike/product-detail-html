@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/dgmike/product-detail-html/issues"
   },
-  "homepage": "https://github.com/dgmike/product-detail-html#readme"
+  "homepage": "https://github.com/dgmike/product-detail-html#readme",
+  "dependencies": {
+    "httpdispatcher": "^2.0.1"
+  }
 }

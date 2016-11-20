@@ -1,0 +1,28 @@
+{
+  "name": "product-detail-html",
+  "version": "0.0.0",
+  "description": "Product's details HTML page using mercadolibre official framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgmike/product-detail-html.git"
+  },
+  "keywords": [
+    "html",
+    "gulp",
+    "css",
+    "static",
+    "page",
+    "product",
+    "details"
+  ],
+  "author": "Michael Granados <michaelgranados@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgmike/product-detail-html/issues"
+  },
+  "homepage": "https://github.com/dgmike/product-detail-html#readme"
+}

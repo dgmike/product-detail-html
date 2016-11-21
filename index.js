@@ -1,3 +1,5 @@
+'use strict';
+
 const http = require('http');
 const fs = require('fs');
 const HttpDispatcher = require('httpdispatcher');
@@ -5,12 +7,11 @@ const HttpDispatcher = require('httpdispatcher');
 const PORT = 3000;
 const dispatcher = new HttpDispatcher;
 
-const index = fs.readFileSync('src/index.html');
-
 dispatcher.setStatic('/public');
 dispatcher.setStaticDirname('public');
 
 dispatcher.onGet('/', (req, res) => {
+  let index = fs.readFileSync('src/index.html');
   res.setHeader('Content-Type', 'text/html');
   res.write(index);
   res.end();

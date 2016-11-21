@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const stylus = require('gulp-stylus');
+const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
@@ -28,6 +29,7 @@ gulp.task('stylus', () => {
   return gulp.src(data.stylus.src)
     .pipe(sourcemaps.init())
     .pipe(stylus(data.stylus.options))
+    .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(data.stylus.dest));
 });

@@ -16,7 +16,7 @@ const data = {
     }
   },
   javascript: {
-    src: ['./src/js/main.js'],
+    src: ['./src/vendor/tiny.js/dist/tiny.js', './src/vendor/chico/dist/ui/chico.js', './src/js/main.js'],
     dest: {
       path: './public/js/',
       file: 'main.js'

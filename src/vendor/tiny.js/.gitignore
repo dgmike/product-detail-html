@@ -1,0 +1,8 @@
+.DS_Store
+thumb.db
+.idea
+*.log
+
+lib/
+node_modules/
+dist/tiny-*.js

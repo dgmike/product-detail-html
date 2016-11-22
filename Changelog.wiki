@@ -1,12 +1,18 @@
-== 0.1.0 (Nov/20 2016 16:00 -0200 by Michael Granados) ==
+== 0.2.0 (Nov/22 2016 01:49 -0200 by Michael Granados) ==
 
 Features:
 
-  - base structure to development ambiance
-  - .nvmrc informing node version used
-  - editorconfig informs how each file must follow structure
-  - license MIT
-  - nodejs server serving static files
-  - script to release version
+  - compiling stylus to css files
+  - gulp task to compile javascript files
+  - simple product page
 
+== v0.1.0 (Nov/20 2016 16:00 -0200 by Michael Granados) ==
 
+Features:
+
+* base structure to development ambiance
+* .nvmrc informing node version used
+* editorconfig informs how each file must follow structure
+* license MIT
+* nodejs server serving static files
+* script to release version

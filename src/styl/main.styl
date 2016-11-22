@@ -84,4 +84,21 @@ hr
   .product__buybutton
     margin-top 1em
 
+// tabs
+// aria
+[role='tablist']
+  [aria-selected='true']
+    background-color #f0f0f0
+    background-image linear-gradient(#f0f0f0, #fff)
+    border-bottom 1px solid #fff
+    cursor default
+    font-weight bold
+    box-shadow 2px 0 2px rgba(255, 255, 255, 0.5)
+
+[aria-hidden='true']
+  display none
+
+#tab-content-questions:target,
+#tab-content-description:target
+  display block
 

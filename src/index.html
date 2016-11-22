@@ -108,15 +108,15 @@
 				<div class="mesh-row">
 					<div class="mesh-col-12">
 						<div class="ch-tabs">
-							<ul class="ch-tabs-triggers">
-								<li><a class="ch-tab ch-expandable-trigger-on" href="#tab-description">Product description</a></li>
-								<li><a class="ch-tab" href="#tab-questions">Questions</a></li>
+							<ul class="ch-tabs-triggers" role="tablist">
+								<li><a id="tab-description" class="ch-tab" href="#tab-content-description" role="tab" arial-controls="tab-content-description" aria-selected="true" tabindex="0">Product description</a></li>
+								<li><a id="tab-questions" class="ch-tab" href="#tab-content-questions" role="tab" arial-controls="tab-content-questions" aria-selected="false" tabindex="0">Questions</a></li>
 							</ul>
-							<div class="ch-box-lite ch-tabs-panel">
-								<div id="tab-description" class="ch-tabpanel" itemprop="description">
+							<div class="ch-box-lite ch-tabs-panel" aria-live="polite" role="region">
+								<div id="tab-content-description" class="ch-tabpanel" itemprop="description" role="tabpanel" arial-labeledby="tab-description" aria-hidden="false" tabindex="0">
 									<p>An Ipad with great features.</p>
 								</div>
-								<div id="tab-questions" class="ch-tabpanel ch-hide">
+								<div id="tab-content-questions" class="ch-tabpanel ch-hide" role="tabpanel" arial-labeledby="tab-questions" aria-hiden="true" tabindex="0">
 									other sample
 								</div>
 							</div>

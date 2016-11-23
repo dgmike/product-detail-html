@@ -4,7 +4,7 @@
 <!--[if IE 7]>	<html class="no-js  lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
 <!--[if IE 8]>	<html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
 <!--[if IE 9]>	<html class="no-js lt-ie10 ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<title>Detalhes do produto</title>
@@ -32,26 +32,26 @@
 						<div class="mesh-col-6">
 							<div class="product__price ch-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 								<meta itemprop="price" content="4799.99">
-								<meta itemprop="priceCurrency" content="BRL">
+								<meta itemprop="priceCurrency" content="USD">
 								$ 4799<sup>99</sup>
 							</div>
 							<form action="#" method="post" class="ch-form">
 								<div class="product__quantity ch-form-row">
-									<label for="input_product_quantity">Quantity</label>
-									<select name="qty" id="input_product_quantity">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
+									<label for="input_product_quantity" id="label_product_quantity">Quantity</label>
+									<select name="qty" id="input_product_quantity" role="listbox" aria-labelledby="label_product_quantity">
+										<option value="1" role="option">1</option>
+										<option value="2" role="option">2</option>
+										<option value="3" role="option">3</option>
+										<option value="4" role="option">4</option>
 									</select>
 								</div>
 								<div class="product__payments ch-form-row">
-									<label for="input_product_payments">Payments</label>
-									<select name="payments" id="input_product_payments">
-										<option value="12">12</option>
-										<option value="11">11</option>
-										<option value="10">10</option>
-										<option value="9">9</option>
+									<label for="input_product_payments" id="label_product_payments">Payments</label>
+									<select name="payments" id="input_product_payments" role="listbox" aria-labelledby="label_product_payments">
+										<option value="12" role="option">12</option>
+										<option value="11" role="option">11</option>
+										<option value="10" role="option">10</option>
+										<option value="9" role="option">9</option>
 									</select>
 								</div>
 								<div class="product__buybutton ch-form-row">
@@ -67,31 +67,31 @@
 								<div class="ch-carousel">
 									<nav>
 										<li itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-										<meta itemprop="name" content="relógio wearable">
+										  <meta itemprop="name" content="relógio wearable">
 											<a href="#" title="Veja detalhes do produto relacionado: relógio wearable" itemprop="url">
 												<img src="public/images/related-product-1.jpg" alt="Produto relacionado: relógio wearable" itemprop="image">
 											</a>
 										</li>
 										<li itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-										<meta itemprop="name" content="celular LG">
+										  <meta itemprop="name" content="celular LG">
 											<a href="#" title="Veja detalhes do produto relacionado: celular LG" itemprop="url">
 												<img src="public/images/related-product-2.jpg" alt="Produto relacionado: celular LG" itemprop="image">
 											</a>
 										</li>
 										<li itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-										<meta itemprop="name" content="celular samsung">
+										  <meta itemprop="name" content="celular samsung">
 											<a href="#" title="Veja detalhes do produto relacionado: celular samsung" itemprop="url">
 												<img src="public/images/related-product-3.jpg" alt="Produto relacionado: celular samsung" itemprop="image">
 											</a>
 										</li>
 										<li itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-										<meta itemprop="name" content="tablet samsung">
+										  <meta itemprop="name" content="tablet samsung">
 											<a href="#" title="Veja detalhes do produto relacionado: tablet samsung" itemprop="url">
 												<img src="public/images/related-product-4.jpg" alt="Produto relacionado: tablet samsung" itemprop="image">
 											</a>
 										</li>
 										<li itemprop="isRelatedTo" itemscope itemtype="http://schema.org/Product">
-										<meta itemprop="name" content="Apply iPad">
+										  <meta itemprop="name" content="Apply iPad">
 											<a href="#" title="Veja detalhes do produto relacionado: Apply iPad" itemprop="url">
 												<img src="public/images/related-product-5.jpg" alt="Produto relacionado: Apply iPad" itemprop="image">
 											</a>
@@ -109,14 +109,14 @@
 					<div class="mesh-col-12">
 						<div class="ch-tabs">
 							<ul class="ch-tabs-triggers" role="tablist">
-								<li><a id="tab-description" class="ch-tab" href="#tab-content-description" role="tab" arial-controls="tab-content-description" aria-selected="true" tabindex="0">Product description</a></li>
-								<li><a id="tab-questions" class="ch-tab" href="#tab-content-questions" role="tab" arial-controls="tab-content-questions" aria-selected="false" tabindex="0">Questions</a></li>
+								<li><a id="tab-description" class="ch-tab" href="#tab-content-description" role="tab" aria-controls="tab-content-description" aria-selected="true" tabindex="0">Product description</a></li>
+								<li><a id="tab-questions" class="ch-tab" href="#tab-content-questions" role="tab" aria-controls="tab-content-questions" tabindex="0">Questions</a></li>
 							</ul>
 							<div class="ch-box-lite ch-tabs-panel" aria-live="polite" role="region">
-								<div id="tab-content-description" class="ch-tabpanel" itemprop="description" role="tabpanel" arial-labeledby="tab-description" aria-hidden="false" tabindex="0">
+								<div id="tab-content-description" class="ch-tabpanel" itemprop="description" role="tabpanel" aria-labelledby="tab-description" tabindex="0">
 									<p>An Ipad with great features.</p>
 								</div>
-								<div id="tab-content-questions" class="ch-tabpanel ch-hide" role="tabpanel" arial-labeledby="tab-questions" aria-hiden="true" tabindex="0">
+								<div id="tab-content-questions" class="ch-tabpanel ch-hide" role="tabpanel" aria-labelledby="tab-questions" aria-hidden="true" tabindex="0">
 									other sample
 								</div>
 							</div>

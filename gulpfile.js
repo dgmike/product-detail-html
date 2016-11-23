@@ -5,6 +5,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const htmlmin = require('gulp-htmlmin');
+const cleanCss = require('gulp-clean-css');
 
 const data = {
   html: {
@@ -50,6 +51,7 @@ gulp.task('stylus', () => {
     .pipe(sourcemaps.init())
     .pipe(stylus(data.stylus.options))
     .pipe(autoprefixer())
+    .pipe(cleanCss())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(data.stylus.dest));
 });

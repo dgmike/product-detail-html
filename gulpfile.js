@@ -4,8 +4,18 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const htmlmin = require('gulp-htmlmin');
 
 const data = {
+  html: {
+    src: './src/*.html',
+    dest: './public',
+    options: {
+      removeComments: true,
+      collapseWhitespace: true
+    },
+    watch: './src/html/*.html'
+  },
   stylus: {
     src: './src/styl/main.styl',
     dest: './public/css/',
@@ -24,6 +34,16 @@ const data = {
     watch: './src/js/*'
   }
 };
+
+gulp.task('html', () => {
+  return gulp.src(data.html.src)
+    .pipe(htmlmin(data.html.options))
+    .pipe(gulp.dest(data.html.dest));
+});
+
+gulp.task('html:watch', ['html'], () => {
+  return gulp.watch(data.html.watch, ['html']);
+});
 
 gulp.task('stylus', () => {
   return gulp.src(data.stylus.src)
@@ -51,6 +71,6 @@ gulp.task('javascript:watch', ['javascript'], () => {
   return gulp.watch(data.javascript.watch, ['javascript']);
 });
 
-gulp.task('compile', ['stylus', 'javascript']);
+gulp.task('compile', ['html', 'stylus', 'javascript']);
 
-gulp.task('default', ['stylus:watch', 'javascript:watch']);
+gulp.task('default', ['html:watch', 'stylus:watch', 'javascript:watch']);

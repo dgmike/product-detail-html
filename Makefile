@@ -32,6 +32,7 @@ publish:
 	tar -cvRf ../package.tar 'index.html' 'public'
 	git checkout gh-pages
 	git rm -rf .
+	rm -rf .
 	mv ../package.tar .
 	tar -xvf package.tar
 	rm package.tar

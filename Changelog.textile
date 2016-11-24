@@ -1,0 +1,36 @@
+h2.  0.3.1 (Nov/24 2016 04:17 -0200 by Michael Granados)
+
+Changes:
+
+  - change changelog format to textile
+
+== v0.3.0 (Nov/24 2016 04:09 -0200 by Michael Granados) ==
+
+Features:
+
+* add tiny.js library
+* related products
+* using schema.org to provide microdata
+* add wai-aria specs
+* minify css
+* minify html
+* widget with tabs only in css
+
+== v0.2.0 (Nov/22 2016 01:49 -0200 by Michael Granados) ==
+
+Features:
+
+* compiling stylus to css files
+* gulp task to compile javascript files
+* simple product page
+
+== v0.1.0 (Nov/20 2016 16:00 -0200 by Michael Granados) ==
+
+Features:
+
+* base structure to development ambiance
+* .nvmrc informing node version used
+* editorconfig informs how each file must follow structure
+* license MIT
+* nodejs server serving static files
+* script to release version

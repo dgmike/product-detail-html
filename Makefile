@@ -39,3 +39,4 @@ publish:
 	git add .
 	git commit -m 'Publishing project'
 	git push origin gh-pages
+	git checkout master

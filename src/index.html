@@ -106,18 +106,32 @@
 				<hr>
 
 				<div class="mesh-row">
-					<div class="mesh-col-12">
-						<div class="ch-tabs">
-							<ul class="ch-tabs-triggers" role="tablist">
-								<li><a id="tab-description" class="ch-tab" href="#tab-content-description" role="tab" aria-controls="tab-content-description" aria-selected="true" tabindex="0">Product description</a></li>
-								<li><a id="tab-questions" class="ch-tab" href="#tab-content-questions" role="tab" aria-controls="tab-content-questions" tabindex="0">Questions</a></li>
-							</ul>
-							<div class="ch-box-lite ch-tabs-panel" aria-live="polite" role="region">
-								<div id="tab-content-description" class="ch-tabpanel" itemprop="description" role="tabpanel" aria-labelledby="tab-description" tabindex="0">
-									<p>An Ipad with great features.</p>
+					<div class="mesh-col-12 ch-tabs" role="tablist">
+						<input type="radio" name="tab-option" id="tab-productdescription" checked>
+						<label for="tab-productdescription" id="tab-productdescription-tab" class="ch-tab" role="tab" aria-controls="tab-productdescription-panel">Product description</label>
+						<div class="ch-box-lite ch-tabs-panel" role="tabpanel" aria-labelledby="tab-productdescription-tab">
+							<p>
+								Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+
+						<input type="radio" name="tab-option" id="tab-questions">
+						<label for="tab-questions" id="tab-questions-tab" class="ch-tab" role="tab" aria-controls="tab-questions-panel">Questions</label>
+						<div class="ch-box-lite ch-tabs-panel" role="tabpanel" aria-labelledby="tab-questions-tab">
+							<div class="iteraction iteraction__question">
+								<div class="iteraction__name">
+									Buyer
 								</div>
-								<div id="tab-content-questions" class="ch-tabpanel ch-hide" role="tabpanel" aria-labelledby="tab-questions" aria-hidden="true" tabindex="0">
-									other sample
+								<div class="ch-box-icon ch-box-info">
+									Do you have this one in white?
+								</div>
+							</div>
+							<div class="iteraction iteraction__answer">
+								<div class="iteraction__name">
+									Seller
+								</div>
+								<div class="ch-box-icon ch-box-ok">
+									Do you have this one in white?
 								</div>
 							</div>
 						</div>

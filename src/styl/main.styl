@@ -85,17 +85,45 @@ hr
     margin-top 1em
 
 // tabs
-// aria
-[role='tablist']
-  [aria-selected='true']
-    background-color #f0f0f0
-    background-image linear-gradient(#f0f0f0, #fff)
-    border-bottom 1px solid #fff
-    cursor default
+.ch-tabs
+  height 200px
+  position relative
+
+  input[type=radio]
+    position absolute
+    left -9999em
+    z-index -2
+    & + label
+      &:first-of-type
+        margin-left 10px
+      & + div
+        position absolute
+        display none
+        left 15px
+        right 15px
+
+  input[type=radio]:checked
+    z-index 1
+    & + label
+      background-color #f0f0f0
+      background-image linear-gradient(#f0f0f0, #fff)
+      border-bottom 1px solid #fff
+      cursor default
+      box-shadow 2px 0 2px rgba(255, 255, 255, 0.5)
+      border-bottom 1px solid #FFF
+      font-weight bold
+      & + div
+        display block
+        top 27px
+        z-index -1
+
+// iteraction
+.iteraction
+  .iteraction__name
     font-weight bold
-    box-shadow 2px 0 2px rgba(255, 255, 255, 0.5)
+  
+  &.iteraction__question .iteraction__name
+    color #3a87ad
 
-#tab-content-questions:target,
-#tab-content-description:target
-  display block
-
+  &.iteraction__answer .iteraction__name
+    color #468847

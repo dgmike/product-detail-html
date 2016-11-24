@@ -18,7 +18,7 @@ endif
 	echo 'h2. ' ${VERSION} '('${DATE} 'by '${USER}')' > ${CHANGELOG_FILE}
 	stepup notes | sed "s/^---$$//" >> ${CHANGELOG_FILE}
 	echo >> ${CHANGELOG_FILE}
-	stepup changelog -f wiki >> ${CHANGELOG_FILE}
+	stepup changelog -f confluence >> ${CHANGELOG_FILE}
 	git add ${CHANGELOG_FILE}
 	git commit -m 'Updating changelog'
 	sed -i -e 's/"version":.*,/"version": "${VERSION}",/' package.json

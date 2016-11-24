@@ -10,7 +10,7 @@ const cleanCss = require('gulp-clean-css');
 const data = {
   html: {
     src: './src/*.html',
-    dest: './public',
+    dest: './',
     options: {
       removeComments: true,
       collapseWhitespace: true

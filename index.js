@@ -11,7 +11,7 @@ dispatcher.setStatic('/public');
 dispatcher.setStaticDirname('public');
 
 dispatcher.onGet('/', (req, res) => {
-  let index = fs.readFileSync('src/index.html');
+  let index = fs.readFileSync('index.html');
   res.setHeader('Content-Type', 'text/html');
   res.write(index);
   res.end();

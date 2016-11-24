@@ -1,6 +1,6 @@
 {
   "name": "product-detail-html",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Product's details HTML page using mercadolibre official framework.",
   "main": "index.js",
   "scripts": {

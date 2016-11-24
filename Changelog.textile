@@ -1,8 +1,18 @@
-h2.  0.3.2 (Nov/24 2016 04:20 -0200 by Michael Granados)
+h2.  0.4.0 (Nov/24 2016 05:15 -0200 by Michael Granados)
 
 Bugfixes:
 
-  - correct changelog format
+  - change place to put index.html: in root instead /public
+
+Features:
+
+  - make task to publish project
+
+h2. v0.3.2 (Nov/24 2016 04:20 by Michael Granados)
+
+Bugfixes:
+
+* correct changelog format
 
 h2. v0.3.1 (Nov/24 2016 04:17 by Michael Granados)
 

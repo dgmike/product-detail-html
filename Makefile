@@ -27,3 +27,14 @@ endif
 	stepup version create --no-editor
 	git push origin master
 	git push --tags
+
+publish:
+	tar -cvRf ../package.tar 'index.html' 'public'
+	git checkout gh-pages
+	git rm -rf .
+	mv ../package.tar .
+	tar -xvf package.tar
+	rm package.tar
+	git add .
+	git commit -m 'Publishing project'
+	git push origin gh-pages
